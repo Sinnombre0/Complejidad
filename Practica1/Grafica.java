@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Grafica {
 
-    private final List<Nodo> nodos;
+    private List<Nodo> nodos;
 
     public Grafica() {
         this.nodos = new ArrayList<>();
@@ -29,6 +29,7 @@ public class Grafica {
         Nodo vecino = buscarNodo(idVecino);
 
         nodo.agregarVecino(vecino);
+        vecino.agregarVecino(nodo);
     }
 
     public void consultarVecinosDeUnNodo(int id) {
