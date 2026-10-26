@@ -1,8 +1,5 @@
 Para compilar se ejecuta
 
-bash
+`javac Pratica1/*.java`
 
-´´
-javac Pratica1/*.java
-java Practica1.Main
-´´
+`java Practica1.Main`
