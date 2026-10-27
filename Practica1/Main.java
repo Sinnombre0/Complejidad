@@ -9,7 +9,7 @@ public class Main {
         Nodo nodo3 = new Nodo(3);
         Nodo nodo4 = new Nodo(4);
 
-        // Creamos la grafica y guardar todos los nodos
+        // Creamos la grafica y guardamos todos los nodos
         Grafica grafica = new Grafica();
         grafica.agregarNodo(nodo1);
         grafica.agregarNodo(nodo2);
