@@ -1,0 +1,8 @@
+# Ciclo de 5 vértices: la cubierta mínima es de tamaño 3, con k=2 -> respuesta NO
+k 2
+V 1 2 3 4 5
+1 2
+2 3
+3 4
+4 5
+5 1
