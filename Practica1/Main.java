@@ -11,20 +11,20 @@ public class Main {
             System.exit(1);
         }
 
-        EjemplarVC ejemplar;
+        VertexCode ejemplar;
         try {
-            ejemplar = LectorEjemplar.leer(args[0]);
+            ejemplar = Lector.leer(args[0]);
         } catch (IOException | IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
             System.exit(1);
             return;
         }
 
-        imprimir(ReduccionVCaDS.reducir(ejemplar));
+        imprimir(ReduccionVCaDS.reduce(ejemplar));
     }
 
     private static void imprimir(ResultadoReduccion r) {
-        System.out.println("=== Ejemplar de Dominating Set (G', k) ===");
+        System.out.println("=== Conjunto Dominante (G', k) ===");
         System.out.println("Vertices originales (" + r.verticesOriginales.size() + "): " + r.verticesOriginales);
 
         System.out.println("Vertices nuevos (" + r.verticesNuevos.size() + "):");

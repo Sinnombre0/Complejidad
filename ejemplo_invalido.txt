@@ -1,0 +1,8 @@
+# Ciclo de 5 vértices: la cubierta mínima es 3 con 2 no se puede
+k 2
+V 1 2 3 4 5
+1 2
+2 3
+3 4
+4 5
+5 1

@@ -2,14 +2,13 @@ package Practica1;
 
 import java.util.List;
 
-/** Ejemplar de Vertex Cover: grafica G, lista de aristas y valor k. */
-public class EjemplarVC {
+public class VertexCode {
     private final Grafica grafica;
     private final List<Integer> vertices;
     private final List<int[]> aristas;
     private final int k;
 
-    public EjemplarVC(Grafica grafica, List<Integer> vertices, List<int[]> aristas, int k) {
+    public VertexCode(Grafica grafica, List<Integer> vertices, List<int[]> aristas, int k) {
         this.grafica = grafica;
         this.vertices = vertices;
         this.aristas = aristas;

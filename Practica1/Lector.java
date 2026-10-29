@@ -9,24 +9,11 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Lee un ejemplar de Vertex Cover desde un archivo de texto.
- *
- * Formato:
- *   # comentario (opcional)
- *   k 2
- *   V 1 2 3 4
- *   1 2
- *   2 3
- *   3 4
- *
- * - "k <entero>": tamano de la cubierta buscada.
- * - "V ...": vertices (enteros), permite vertices aislados.
- * - Cualquier otra linea: una arista "u v".
- */
-public class LectorEjemplar {
 
-    public static EjemplarVC leer(String ruta) throws IOException {
+// Leemos el archivo primero leemos el valor de K, despues los vertices y por ultimo las aristas
+public class Lector {
+
+    public static VertexCode leer(String ruta) throws IOException {
         Set<Integer> ids = new LinkedHashSet<>();
         List<int[]> aristas = new ArrayList<>();
         Set<String> vistas = new HashSet<>();
@@ -74,6 +61,6 @@ public class LectorEjemplar {
         for (int id : ids) g.agregarNodo(new Nodo(id));
         for (int[] a : aristas) g.agregarVecino(a[0], a[1]);
 
-        return new EjemplarVC(g, new ArrayList<>(ids), aristas, k);
+        return new VertexCode(g, new ArrayList<>(ids), aristas, k);
     }
 }

@@ -2,10 +2,6 @@ package Practica1;
 
 import java.util.List;
 
-/**
- * Ejemplar de Dominating Set (G', k) con el desglose pedido.
- * nuevos.get(i) es el vertice agregado para la arista aristasOriginales.get(i).
- */
 public class ResultadoReduccion {
     public final Grafica grafica;
     public final int k;
